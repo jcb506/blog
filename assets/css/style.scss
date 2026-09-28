@@ -354,17 +354,21 @@ strong {
 }
 
 /* ============================================================
- * Layout width
+ * Centered content layout
  * ============================================================ */
 
 .wrapper {
-  width: 90%;
-  max-width: 1200px;
+  width: 94%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 section {
-  width: 90%;
-  max-width: 1000px;
+  width: 92%;
+  max-width: 1150px;
+  margin: 0 auto;
+  float: none;
+  padding-bottom: 50px;
 }
 
 @media print, screen and (max-width: 960px) {
