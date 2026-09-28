@@ -352,3 +352,37 @@ hr {
 strong {
   color: $vs-heading;
 }
+
+/* ============================================================
+ * Layout width
+ * ============================================================ */
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+}
+
+section {
+  width: 90%;
+  max-width: 1000px;
+}
+
+@media print, screen and (max-width: 960px) {
+  .wrapper {
+    width: 92%;
+  }
+
+  section {
+    width: 92%;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  .wrapper {
+    width: 94%;
+  }
+
+  section {
+    width: 94%;
+  }
+}
