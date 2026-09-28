@@ -2,3 +2,353 @@
 ---
 
 @import "jekyll-theme-midnight";
+
+/*
+ * VS Code Dark+ color palette
+ *
+ * Background:
+ *   #1E1E1E  Editor
+ *   #252526  Panels
+ *   #181818  Header
+ *
+ * Foreground:
+ *   #D4D4D4  Text
+ *   #808080  Secondary text
+ *
+ * Syntax:
+ *   #569CD6  Blue
+ *   #4EC9B0  Cyan
+ *   #6A9955  Green
+ *   #DCDCAA  Yellow
+ *   #CE9178  Orange
+ *   #C586C0  Purple
+ *   #9CDCFE  Light blue
+ */
+
+$vs-bg:             #1E1E1E;
+$vs-bg-panel:       #252526;
+$vs-bg-header:      #181818;
+$vs-bg-code:        #1E1E1E;
+$vs-border:         #3E3E42;
+
+$vs-text:           #D4D4D4;
+$vs-text-secondary: #808080;
+$vs-heading:        #FFFFFF;
+
+$vs-blue:           #569CD6;
+$vs-cyan:           #4EC9B0;
+$vs-green:          #6A9955;
+$vs-yellow:         #DCDCAA;
+$vs-orange:         #CE9178;
+$vs-purple:         #C586C0;
+$vs-light-blue:     #9CDCFE;
+$vs-red:            #F44747;
+
+
+/* ============================================================
+ * Base
+ * ============================================================ */
+
+body {
+  color: $vs-text;
+  background: $vs-bg;
+  background-image: none;
+}
+
+
+/* ============================================================
+ * Typography
+ * ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $vs-heading;
+}
+
+h3 {
+  color: $vs-text;
+}
+
+p,
+ul,
+ol,
+dl,
+table {
+  color: $vs-text;
+}
+
+dt {
+  color: $vs-text;
+}
+
+
+/* ============================================================
+ * Links
+ * ============================================================ */
+
+a {
+  color: $vs-blue;
+
+  &:hover {
+    color: $vs-light-blue;
+  }
+}
+
+a small {
+  color: $vs-text-secondary;
+}
+
+
+/* ============================================================
+ * Blockquotes
+ * ============================================================ */
+
+blockquote {
+  border-left-color: $vs-blue;
+  color: $vs-text-secondary;
+}
+
+
+/* ============================================================
+ * Code
+ * ============================================================ */
+
+code {
+  color: $vs-orange;
+  background: $vs-bg-panel;
+}
+
+pre {
+  background: $vs-bg-code;
+  border: 1px solid $vs-border;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);
+
+  code {
+    color: $vs-text;
+    background: transparent;
+    text-shadow: none;
+  }
+}
+
+
+/* ============================================================
+ * Tables
+ * ============================================================ */
+
+th {
+  color: $vs-heading;
+  border-bottom-color: $vs-border;
+}
+
+td {
+  border-bottom-color: $vs-border;
+}
+
+
+/* ============================================================
+ * Header / Navigation
+ * ============================================================ */
+
+#header {
+  background: $vs-bg-header;
+  border-bottom-color: $vs-border;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+
+  nav {
+    background: transparent;
+
+    ul li {
+      color: $vs-text;
+
+      a {
+        color: $vs-text;
+        background: $vs-bg-panel;
+        border: 1px solid $vs-border;
+        box-shadow: none;
+
+        &:hover {
+          color: $vs-heading;
+          background: #333333;
+          border-color: #555555;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+
+/* ============================================================
+ * Page title
+ * ============================================================ */
+
+section {
+  #title {
+    h1 {
+      color: $vs-heading;
+    }
+
+    p {
+      color: $vs-text-secondary;
+    }
+
+    .credits {
+      color: $vs-text-secondary;
+    }
+  }
+}
+
+
+/* ============================================================
+ * Rouge syntax highlighting
+ * VS Code Dark+ inspired
+ * ============================================================ */
+
+.highlight,
+.highlight .w {
+  color: $vs-text;
+  background: $vs-bg-code;
+}
+
+/* Errors */
+.highlight .err {
+  color: $vs-red;
+  background: transparent;
+}
+
+/* Comments */
+.highlight .c,
+.highlight .cd,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: $vs-green;
+}
+
+/* Preprocessor */
+.highlight .cp {
+  color: $vs-purple;
+}
+
+/* HTML/XML tags */
+.highlight .nt {
+  color: $vs-blue;
+}
+
+/* Operators */
+.highlight .o,
+.highlight .ow {
+  color: $vs-text;
+}
+
+/* Punctuation */
+.highlight .p,
+.highlight .pi {
+  color: $vs-text;
+}
+
+/* Inserted / diff */
+.highlight .gi {
+  color: $vs-green;
+}
+
+.highlight .gd {
+  color: $vs-red;
+}
+
+/* Headings */
+.highlight .gh {
+  color: $vs-blue;
+  font-weight: bold;
+}
+
+/* Keywords */
+.highlight .k,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv {
+  color: $vs-purple;
+}
+
+/* Constants */
+.highlight .kc {
+  color: $vs-blue;
+}
+
+/* Types / declarations */
+.highlight .kt,
+.highlight .kd {
+  color: $vs-cyan;
+}
+
+/* Strings */
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1 {
+  color: $vs-orange;
+}
+
+/* Regex */
+.highlight .sr {
+  color: $vs-cyan;
+}
+
+/* Escape sequences */
+.highlight .si,
+.highlight .se {
+  color: $vs-yellow;
+}
+
+/* Namespaces / classes */
+.highlight .nn,
+.highlight .nc,
+.highlight .no {
+  color: $vs-cyan;
+}
+
+/* Attributes */
+.highlight .na {
+  color: $vs-light-blue;
+}
+
+/* Numbers */
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx {
+  color: #B5CEA8;
+}
+
+/* Symbols */
+.highlight .ss {
+  color: $vs-cyan;
+}
+
+
+/* ============================================================
+ * Misc
+ * ============================================================ */
+
+hr {
+  background: none;
+  border-top: 1px solid $vs-border;
+  height: 1px;
+}
+
+strong {
+  color: $vs-heading;
+}
