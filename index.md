@@ -20,12 +20,12 @@ Most of the posts here are notes from things I am learning, building, breaking, 
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h3>
 
-```
+<!-- ``` -->
   {% if post.excerpt %}
     <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
   {% endif %}
 </li>
-```
+<!-- ``` -->
 
 {% endfor %}
 
