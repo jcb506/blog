@@ -19,4 +19,29 @@ layout: default
 
 {% endfor %}
 
+<h1>Browse by topic</h1>
+
+<div class="tag-list">
+  {% for tag in site.tags %}
+    <a href="#{{ tag[0] | slugify }}" class="tag">
+      {{ tag[0] }} ({{ tag[1].size }})
+    </a>
+  {% endfor %}
+</div>
+
+{% for tag in site.tags %}
+  <section id="{{ tag[0] | slugify }}">
+    <h2>{{ tag[0] }}</h2>
+    <ul>
+      {% for post in tag[1] %}
+        <li>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
+
 </ul>
