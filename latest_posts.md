@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Search
-permalink: /search/
 ---
 
 <h1>Search by Tag</h1>
