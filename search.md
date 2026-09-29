@@ -4,12 +4,7 @@ layout: default
 
 <h1>Search by Tag</h1>
 
-<input
-  type="text"
-  id="tag-search"
-  placeholder="Search by tag..."
-  autocomplete="off"
->
+<input type="text" id="tag-search" placeholder="Search by tag...">
 
 <div id="tag-results"></div>
 
