@@ -3,7 +3,7 @@ layout: post
 title: "History of botnets"
 date: 2026-09-29
 tags: [cybersecurity, malware, botnets]
-pined: true
+pinned: true
 ---
 
 ## History of botnets
