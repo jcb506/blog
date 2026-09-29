@@ -13,7 +13,3 @@ layout: default
 </script>
 
 <script src="{{ '/assets/js/tag-search.js' | relative_url }}"></script>
-
-<pre>
-
-</pre>
