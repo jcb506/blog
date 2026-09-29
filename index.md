@@ -10,11 +10,9 @@ This is where I write about the things I work with and the things I find interes
 
 Most of the posts here are notes from things I am learning, building, breaking, and fixing. Some will be polished articles; others may be little experiments or technical notes that I want to keep around.
 
-## Pinned posts
 {% assign pinned_posts = site.posts | where: "pinned", true %}
-
 {% if pinned_posts.size > 0 %}
-<h2>Pinned</h2>
+<h2>Pinned posts</h2>
 
 <ul class="post-list">
   {% for post in pinned_posts %}
