@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 <h1>Search by Tag</h1>
