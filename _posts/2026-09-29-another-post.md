@@ -1,5 +1,6 @@
 ---
 layout: default
+pinned: true
 ---
 
 ## This is another post
