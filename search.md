@@ -1,7 +1,5 @@
 ---
 layout: default
-title: Search
-# permalink: /search/
 ---
 
 <h1>Search by Tag</h1>
@@ -14,5 +12,9 @@ title: Search
 >
 
 <div id="tag-results"></div>
+
+<script>
+  const searchIndex = "{{ '/search.json' | relative_url }}";
+</script>
 
 <script src="{{ '/assets/js/tag-search.js' | relative_url }}"></script>
