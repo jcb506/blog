@@ -3,14 +3,24 @@ const results = document.getElementById("tag-results");
 
 let posts = [];
 
-fetch("/search.json")
-  .then(response => response.json())
+fetch(searchIndex)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+
+    return response.json();
+  })
   .then(data => {
     posts = data;
+    console.log("Search index loaded:", posts);
+  })
+  .catch(error => {
+    console.error("Error loading search index:", error);
   });
 
 searchInput.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase().trim();
+  const query = searchInput.value.trim().toLowerCase();
 
   results.innerHTML = "";
 
@@ -23,6 +33,14 @@ searchInput.addEventListener("input", () => {
       tag.toLowerCase().includes(query)
     )
   );
+
+  console.log("Search:", query);
+  console.log("Matches:", matchingPosts);
+
+  if (matchingPosts.length === 0) {
+    results.innerHTML = "<p>No posts found.</p>";
+    return;
+  }
 
   matchingPosts.forEach(post => {
     const article = document.createElement("article");
