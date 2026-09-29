@@ -475,4 +475,10 @@ section {
 .tag:hover {
   background: var(--vscode-selection);
 }
+
+.post-tags {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
 }
