@@ -456,29 +456,31 @@ section {
   }
 
   /* ============================================================
- * Search page
- * ============================================================ */
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 1rem 0 2rem;
-}
+   * Search page
+   * ============================================================ */
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1rem 0 2rem;
+  }
 
-.tag {
-  padding: 5px 10px;
-  border: 1px solid var(--vscode-border);
-  border-radius: 4px;
-  text-decoration: none;
-}
+  .tag {
+    padding: 5px 10px;
+    border: 1px solid var(--vscode-border);
+    border-radius: 4px;
+    text-decoration: none;
+  }
 
-.tag:hover {
-  background: var(--vscode-selection);
-}
+  .tag:hover {
+    background: var(--vscode-selection);
+  }
 
-.post-tags {
-  display: block;
-  margin-top: 6px;
-  margin-bottom: 20px;
-}
+  .post-tags {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    font-size: 0.85em;
+    opacity: 0.7;
+  }
 }
