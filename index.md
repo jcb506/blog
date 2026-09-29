@@ -19,7 +19,7 @@ Most of the posts here are notes from things I am learning, building, breaking, 
     <li>
       <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
       <h3>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">  </a>
       </h3>
 
       {% if post.excerpt %}
@@ -38,7 +38,7 @@ Most of the posts here are notes from things I am learning, building, breaking, 
     <li>
       <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
       <h3>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}"></a>
       </h3>
 
     {% if post.excerpt %}
