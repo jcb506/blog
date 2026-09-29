@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head-custom.html %}
+  </head>
+  <body>
+      <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}">
+          Jairo's Blog
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="https://github.com/jcb506">Github</a>
+          <a href="{{ 'search.html'| relative_url }}">Search</a>
+          <a href="{{ 'all_posts.html'| relative_url }}">Posts</a>
+          <a href="{{ 'about.html' | relative_url }}">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wrapper">
+
+      <section>
+        <!-- <div id="title">
+          <h1>Jairo's Blog</h1>
+          <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+          <hr>
+        </div> -->
+
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+
+       
+        
+        <div id="title">
+          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+        </div>
+
+      </section>
+
+    </div>
+  </body>
+</html>
